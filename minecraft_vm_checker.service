@@ -1,0 +1,9 @@
+[Unit]
+Description=Minecraft VM Checker
+After=multi-user.target
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /home/jjfs85/minecraft_vm_checker/azure_spot_vm_monitor.py
+[Install]
+WantedBy=multi-user.target
